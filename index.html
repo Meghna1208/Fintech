@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fincare - Digital Banking</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+
+function addExpense() {
+            const expensesContainer = document.getElementById('expenses-list');
+            const newExpenseDiv = document.createElement('div');
+            newExpenseDiv.classList.add('expense-item');
+
+            const expenseLabel = document.createElement('label');
+            expenseLabel.innerText = 'Expense';
+            const expenseInput = document.createElement('input');
+            expenseInput.type = 'text';
+            expenseInput.name = 'expense';
+            expenseInput.placeholder = 'e.g. Groceries, Rent';
+
+            const costLabel = document.createElement('label');
+            costLabel.innerText = 'Cost';
+            const costInput = document.createElement('input');
+            costInput.type = 'number';
+            costInput.classList.add('expense-input');
+            costInput.placeholder = 'Enter cost';
+            costInput.onchange = calculateTotalExpenses; 
+
+            // Remove button
+            const removeBtn = document.createElement('button');
+            removeBtn.innerText = 'Remove';
+            removeBtn.type = 'button';
+            removeBtn.onclick = function() {
+                newExpenseDiv.remove(); 
+                calculateTotalExpenses(); 
+            };
+
+            newExpenseDiv.appendChild(expenseLabel);
+            newExpenseDiv.appendChild(expenseInput);
+            newExpenseDiv.appendChild(costLabel);
+            newExpenseDiv.appendChild(costInput);
+            newExpenseDiv.appendChild(removeBtn);
+            expensesContainer.appendChild(newExpenseDiv);
+        }
+
+        // Function to calculate total expenses
+        function calculateTotalExpenses() {
+            const expenseCosts = document.querySelectorAll('.expense-input');
+            let total = 0;
+
+            expenseCosts.forEach(function(expense) {
+                let value = parseFloat(expense.value);
+                if (!isNaN(value)) {
+                    total += value;
+                }
+            });
+
+            document.getElementById('total-expenses').innerText = 'Total Expenses: ₹' + total.toFixed(2);
+        }
+        
+        // Function to add a weekend plan
+        function addActivity() {
+            const activitiesContainer = document.getElementById('activities');
+            
+            const newActivityDiv = document.createElement('div');
+            newActivityDiv.classList.add('activity-item');
+            
+            const activityLabel = document.createElement('label');
+            activityLabel.innerText = 'Activity';
+            const activityInput = document.createElement('input');
+            activityInput.type = 'text';
+            activityInput.name = 'activity';
+            activityInput.placeholder = 'e.g. Movie, Dinner';
+
+            const costLabel = document.createElement('label');
+            costLabel.innerText = 'Estimated Cost';
+            const costInput = document.createElement('input');
+            costInput.type = 'number';
+            costInput.classList.add('cost-input');
+            costInput.placeholder = 'Enter cost';
+            costInput.onchange = calculateTotalBudget; // Update total when cost changes
+
+            // Remove Button
+            const removeBtn = document.createElement('button');
+            removeBtn.innerText = 'Remove';
+            removeBtn.type = 'button';
+            removeBtn.onclick = function() {
+                newActivityDiv.remove(); 
+                calculateTotalBudget(); 
+            };
+
+            newActivityDiv.appendChild(activityLabel);
+            newActivityDiv.appendChild(activityInput);
+            newActivityDiv.appendChild(costLabel);
+            newActivityDiv.appendChild(costInput);
+            newActivityDiv.appendChild(removeBtn);
+
+            activitiesContainer.appendChild(newActivityDiv);
+        }
+
+        function calculateTotalBudget() {
+            const costs = document.querySelectorAll('.cost-input');
+            let total = 0;
+
+            costs.forEach(function(cost) {
+                let value = parseFloat(cost.value);
+                if (!isNaN(value)) {
+                    total += value;
+                }
+            });
+            document.getElementById('total-budget').innerText = 'Total Estimated Budget: ₹' + total.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Fincare_LOGO.png" alt="Fincare Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#expenses">Expenses</a></li>
+                <li><a href="#weekend-planner">Weekend Planner</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Fincare</h1>
+            <p>Your digital secured banking system</p>
+            <a href="#services" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <p>Manage your last month's expenses and plan for the future with Fincare.<br>
+        You can easily access your budget and expenses whether it is a "DAY OUT"  or a "WEEKEND'S PLAN<br>
+    <b>"Finance Is an Oraganised Term For Money Management"</b><br>
+    <b>"Your Money"<br>"Your Rule"</b></p>
+
+    </section>
+
+    <!--Expenses Section-->
+    <section id="expenses" class="expenses-section">
+        <h2>Track Your Expenses</h2>
+        <p>Get insights into your last month's expenses and adjust your budget accordingly.</p>
+    </section>
+
+        <form id="expenses-form">
+            <div id="expenses-list"></div>
+            <button type="button" onclick="addExpense()">Add Expense</button> 
+
+            <!-- Total expenses -->
+            <h3 id="total-expenses">Total Expenses: ₹0.00</h3>
+        </form>
+    </section>
+
+
+    <!-- Weekend Planner Section -->
+    <section id="weekend-planner" class="planner-section">
+        <h2>Weekend Planner</h2>
+        <p>List your plans for the weekend and calculate an estimated budget based on your inputs.</p>
+
+        
+        <form id="planner-form">
+            <div id="activities"></div> 
+            <button type="button" onclick="addActivity()">Add Activity</button> 
+
+            <!-- Total estimated budget -->
+            <h3 id="total-budget">Total Estimated Budget: ₹0.00</h3>
+        </form>
+
+        <!--Contact Us-->
+        <section id ="contact" class ="contact-section">
+            <h2>Contact Us : 9075XXXXXX</h2>
+        </section>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2024 Fincare - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

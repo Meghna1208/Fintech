@@ -1,0 +1,214 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ffa07a;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.hero {
+    background-color: #ffcccb;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.services-section, .expenses-section, .planner-section {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #ffa07a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin-bottom: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .form input {
+        padding: 8px;
+    }
+}
+
+.activity-item {
+    margin-bottom: 20px;
+}
+
+.activity-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.activity-item input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="button"] {
+    padding: 8px 16px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="button"]:hover {
+    background-color: #ff6347;
+}
+
+#total-budget {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ff7f50;
+}
+
+.expense-item {
+    margin-bottom: 20px;
+}
+
+.expense-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.expense-item input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="button"] {
+    padding: 8px 16px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="button"]:hover {
+    background-color: #ff6347;
+}
+
+#total-expenses, #total-budget {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ff7f50;
+}
