@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <!-- Background shape -->
+  <rect x="10" y="10" width="40" height="40" rx="8" fill="#3498db"/>
+  
+  <!-- F letter -->
+  <path d="M25 20 L40 20 M25 20 L25 40 M25 30 L37 30" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Text -->
+  <text x="60" y="37" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2c3e50">Fincare</text>
+  
+  <!-- Coin/Money icon -->
+  <circle cx="180" cy="30" r="10" fill="#2ecc71"/>
+  <text x="180" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">₹</text>
+</svg>
