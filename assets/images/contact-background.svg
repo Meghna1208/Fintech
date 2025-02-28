@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+  
+  <!-- Wave pattern -->
+  <path d="M0,100 C100,80 200,120 300,100 C400,80 500,120 600,100 C700,80 800,120 800,100 L800,400 L0,400 Z" 
+        fill="#ebf0f5"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="200" cy="250" r="50" fill="#3498db" opacity="0.05"/>
+  <circle cx="600" cy="200" r="70" fill="#2ecc71" opacity="0.05"/>
+  <circle cx="400" cy="300" r="100" fill="#f1c40f" opacity="0.05"/>
+</svg>

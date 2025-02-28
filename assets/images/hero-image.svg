@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <!-- Background elements -->
+  <circle cx="250" cy="200" r="150" fill="#f0f4f8" opacity="0.6"/>
+  <path d="M50,350 C100,300 200,320 250,280 C300,240 400,300 450,250" stroke="#e1e8ed" stroke-width="8" fill="none"/>
+  
+  <!-- Mobile banking device -->
+  <rect x="150" y="100" width="120" height="220" rx="10" fill="#2c3e50"/>
+  <rect x="160" y="120" width="100" height="180" rx="2" fill="#ecf0f1"/>
+  
+  <!-- App interface elements -->
+  <rect x="170" y="140" width="80" height="15" rx="3" fill="#3498db"/>
+  <rect x="170" y="165" width="40" height="10" rx="2" fill="#7f8c8d"/>
+  <rect x="170" y="185" width="80" height="10" rx="2" fill="#7f8c8d"/>
+  <rect x="170" y="205" width="60" height="10" rx="2" fill="#7f8c8d"/>
+  
+  <!-- Card and wallet graphics -->
+  <rect x="170" y="225" width="80" height="50" rx="5" fill="#3498db"/>
+  <rect x="180" y="240" width="40" height="5" rx="1" fill="white" opacity="0.7"/>
+  <rect x="180" y="250" width="20" height="5" rx="1" fill="white" opacity="0.7"/>
+  <circle cx="230" cy="245" r="10" fill="#f1c40f" opacity="0.8"/>
+  <circle cx="240" cy="245" r="10" fill="#e74c3c" opacity="0.6"/>
+  
+  <!-- Financial chart -->
+  <rect x="210" y="290" width="200" height="120" rx="10" fill="white" stroke="#bdc3c7" stroke-width="2"/>
+  <polyline points="230,370 260,330 290,350 320,310 350,320 380,290" stroke="#2ecc71" stroke-width="3" fill="none"/>
+  <line x1="230" y1="390" x2="380" y2="390" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="230" y1="390" x2="230" y2="300" stroke="#bdc3c7" stroke-width="1"/>
+  
+  <!-- Coins/money icons -->
+  <circle cx="320" cy="150" r="25" fill="#f1c40f"/>
+  <text x="320" y="158" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">₹</text>
+  
+  <circle cx="370" cy="180" r="20" fill="#3498db"/>
+  <text x="370" y="187" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">₹</text>
+  
+  <circle cx="400" cy="140" r="15" fill="#2ecc71"/>
+  <text x="400" y="145" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">₹</text>
+</svg>

@@ -1,14 +1,56 @@
-FINCARE
-                             
+# FinCare - A FinTech Solution for Expense Tracking
 
-We team codegrammers chose the topic FinTech for our project in the hackathon Techtrek.
-          Here’s the insight of our project ----
-•	The website we created is to keep track of any individual’s daily expenses.
-•	Anyone can access to the website directly.
-•	Here the calculation of the individual’s total expenses is recorded.
-•	It’s a fully secured website which also gives a budget for the weekend plans and organize the expenses according to it.
-          The technologies used for our project are ---
-o	 The logo of our website is made up of PNG file.
-o	HTML is used to create the website for our project.
-o	CSS was used for the design of the interface of our website.
-           The goal of our project is to make people be          aware of their finances , give budget for weekend plans and encourage them to be financially responsible.
+## Overview
+**FinCare** is a web-based application designed to help individuals keep track of their daily expenses. It allows users to manage their finances efficiently, provides insights into spending patterns, and even suggests a budget for weekend plans.
+
+## Features
+- **Daily Expense Tracking**: Users can log their expenses and view a detailed breakdown of their spending.
+- **Budgeting for Weekend Plans**: The system helps organize expenses and suggests a suitable budget.
+- **Secure and Accessible**: The website is accessible to everyone and ensures data security.
+
+## Technologies Used
+- **Frontend Development:**
+  - HTML for structuring the website.
+  - CSS for designing the user interface.
+  - JavaScript for interactive elements.
+- **Assets:**
+  - The logo and background images are in PNG and SVG formats.
+
+## Project Structure
+```
+FinCare/
+├── assets/
+│   └── images/
+│       ├── contact-background.svg
+│       ├── fincare-logo.svg
+│       ├── footer-wave.svg
+│       ├── hero-image.svg
+│       ├── pattern-background.svg
+│       ├── service-placeholder.svg
+├── css/
+│   └── styles.css
+├── js/
+│   └── script.js
+├── index.html
+├── README.md
+```
+
+## How to Use
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/FinCare.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd FinCare
+   ```
+3. Open `index.html` in your browser to access the website.
+
+## Contribution
+We welcome contributions! Feel free to open issues or submit pull requests.
+
+## Team Codegrammers
+This project was developed by **Team Codegrammers** for the **TechTrek Hackathon**.
+
+## License
+This project is open-source and available under the MIT License.
