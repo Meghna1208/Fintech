@@ -38,11 +38,11 @@ FinCare/
 ## How to Use
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/FinCare.git
+   git clone https://github.com/Meghna1208/Fintech.git
    ```
 2. Navigate to the project directory:
    ```sh
-   cd FinCare
+   cd Fintech
    ```
 3. Open `index.html` in your browser to access the website.
 
